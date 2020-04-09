@@ -7,7 +7,7 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="https://pictures.s3.yandex.net/frontend-developer/dom_bom/logo.svg" alt="logo">
+        <img class="header__logo" src="logo.svg" alt="logo">
         <p class="header__logo-sub">Регулярные выражения</p>
     </header>
     <main class="container">
@@ -23,7 +23,7 @@
                         <input class="form__input" type="text" minlength="2" maxlength="20" name="name" pattern="^([А-ЯЁ][а-яё]+)(-[А-ЯЁ][а-яё]+)?$" placeholder="Имя" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" minlength="4" name="email" pattern="^([A-Za-z0-9_-]+)@[A-Za-z]{2,}\.[A-Za-z]{2,}$" placeholder="E-Mail" required />
+                        <input class="form__input" type="text" minlength="4" name="email" pattern="^([A-Za-z]([A-Za-z0-9_-]*[A-Za-z]+)?)@([A-Za-z]([A-Za-z0-9_-]*[A-Za-z]+)?)\.([A-Za-z]){2,3}$" placeholder="E-Mail" required />
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
